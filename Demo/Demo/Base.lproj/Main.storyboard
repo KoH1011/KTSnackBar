@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mQ-Cj-QOy">
+                                <rect key="frame" x="0.0" y="80" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="148-V8-95e"/>
+                                </constraints>
+                                <state key="normal" title="default show"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO1-nQ-6Tc">
+                                <rect key="frame" x="0.0" y="160" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="azI-8d-myF"/>
+                                </constraints>
+                                <state key="normal" title="timer show"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-Kl-UJL">
+                                <rect key="frame" x="0.0" y="240" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Pm8-4t-QgF"/>
+                                </constraints>
+                                <state key="normal" title="custom"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtI-rG-Rjw">
+                                <rect key="frame" x="0.0" y="320" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qM5-LW-Ula"/>
+                                </constraints>
+                                <state key="normal" title="dismiss"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5mQ-Cj-QOy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="11g-cd-qKW"/>
+                            <constraint firstItem="iO1-nQ-6Tc" firstAttribute="top" secondItem="5mQ-Cj-QOy" secondAttribute="bottom" constant="20" id="3Ub-oX-WCY"/>
+                            <constraint firstItem="JtI-rG-Rjw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Tk-bm-9f6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tYY-Kl-UJL" secondAttribute="trailing" id="6bz-AJ-VKS"/>
+                            <constraint firstItem="tYY-Kl-UJL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OSK-x3-mum"/>
+                            <constraint firstItem="iO1-nQ-6Tc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tfg-HF-lpj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iO1-nQ-6Tc" secondAttribute="trailing" id="fcj-dw-NCH"/>
+                            <constraint firstItem="5mQ-Cj-QOy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jzF-LX-XRd"/>
+                            <constraint firstItem="tYY-Kl-UJL" firstAttribute="top" secondItem="iO1-nQ-6Tc" secondAttribute="bottom" constant="20" id="n93-k8-UiI"/>
+                            <constraint firstItem="5mQ-Cj-QOy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="r47-hr-iYT"/>
+                            <constraint firstItem="JtI-rG-Rjw" firstAttribute="top" secondItem="tYY-Kl-UJL" secondAttribute="bottom" constant="20" id="u9l-q9-MVI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JtI-rG-Rjw" secondAttribute="trailing" id="w98-qX-oFH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="customButton" destination="tYY-Kl-UJL" id="bRn-Ad-Zgx"/>
+                        <outlet property="defaultButton" destination="5mQ-Cj-QOy" id="s06-UQ-dP9"/>
+                        <outlet property="dismissButton" destination="JtI-rG-Rjw" id="JuS-C1-b3F"/>
+                        <outlet property="timerShowButton" destination="iO1-nQ-6Tc" id="VJ5-Ur-Xrq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
